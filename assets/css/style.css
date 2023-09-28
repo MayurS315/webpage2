@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
 *{
     margin:0px;
     padding:0px;
@@ -39,10 +42,8 @@ header h1,header h3{
 nav{
     width:100%;
     height:40px;
+    line-height: 40px;
     padding: 0px 100px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
     background-color:#44965e;
 }
 nav ul li{
@@ -55,37 +56,118 @@ nav ul li a{
     font-weight: 600;
     text-decoration: none;
 }
+nav ul li a:hover{
+    font: size 105%;
+    color:white;
+    transition: 0.3s linear;
+}
 section{
     width:100%;
-    display: flex;
-    
-}
-section main{
-    width:75%;
-    
-    text-align:justify;
-    margin: 20px 70px;
-    /* padding: 40px; */
-}
- section aside{
-    width:20%;
-   
-    background-color:#9e9b9b;
-}
-aside dl{
-    padding: 20px;
-    
-}
-aside dl dt{
-   font-size: large;
-   font-weight: bold;
+    padding:0px 100px;    
 }
 
-aside dl dd a{
-   text-decoration: none;
-   color: #000;
-   margin:0px 20px;
-   line-height: 1.5;
- }
+section main {
+    width: 80%;
+    float:left;
+    padding-top: 20px;
+   margin-bottom: 20px;
+}
+
+section main h2,h5{
+    font-family: poppins;
+
+}
+
+section main h5 span a{
+   color:#05571d;
+   text-decoration: none;   
+}
+section main p{
+    margin-bottom: 15px;
+}
+section main p a {
+    text-decoration: none;
+    color: #05571d;
+}
+section main ul li{
+    margin-left:30px;
+    padding:0px 10px ;
+}
+section h3{
+    margin-bottom: 10px;
+}
+section main ol li{
+    margin-left:30px;
+    padding:0px 10px ;
+}
+section main ul li.vl{
+    border-left: 2px solid green;
+    height: 50px;
+    margin-left:30px;
+    margin-bottom: 20px;
+    padding:0px 10px ;
+    list-style: none;
+}
+
+ section aside{
+    width:20%;
+    float:right;
+    padding:20px 15px;
+    background-color:#b9dbbe;
+}
+aside ul li{
+   font-weight: 600;
+   list-style: none;
+   margin-left:25px;
+}
+
+aside ul li ul li{
+    padding-left:20px;
+    font-weight: normal;
+}
+
+footer{
+    width:100%;
+    height:150px;
+    color:#fff;
+    padding:20px 100px;
+    background:#05571d;
+}
+footer .links{
+    width:33%;
+    float:left;
+}
+
+
+footer .follow{
+    width:33%;
+    float:left;
+}
+footer ~ ul{
+    padding:5px;
+   
+}
+footer ul li{
+    list-style: none;
+    padding:3px;
+    
+}
+footer ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: red;
+}
+
+footer .copy{
+    width:34%;
+    float:right;
+    text-align:right;
+}
+footer .copy p{
+    text-align: center;
+}
+
 
  
